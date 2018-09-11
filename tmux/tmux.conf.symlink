@@ -1,0 +1,35 @@
+# use UTF8
+set -g utf8
+set-window-option -g utf8 on
+
+# use C-a, since it's on the home row and easier to hit than C-b
+# set-option -g prefix C-a
+# unbind-key C-a
+# bind-key C-a send-prefix
+
+# set scrollback history to 10000 (10k)
+set -g history-limit 10000
+
+# set window and pane index to 1 (0 by default)
+set-option -g base-index 1
+setw -g pane-base-index 1
+
+# Titles (window number, program name, active (or not)
+set-option -g set-titles on
+set-option -g set-titles-string '#H:#S.#I.#P #W #T'
+
+# Highlight the active window
+set-window-option -g window-status-current-bg magenta
+
+# Enable mouse support
+set-window-option -g mode-mouse on
+set-option -g mouse-resize-pane on
+set-option -g mouse-select-pane on
+set-option -g mouse-select-window on
+
+# Bind ctrl-r to reload config
+bind-key C-r source-file ~/.tmux.conf\; display "reloaded config"
+
+# Bind ctrl-k to tmux clear-history command
+# bind-key C-k send-keys C-l C-m\; run-shell "sleep 0.1"\; clear-history
+bind-key C-k send-keys "reset" C-m\; run-shell "sleep 0.1"\; clear-history
