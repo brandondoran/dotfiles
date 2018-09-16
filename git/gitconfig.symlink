@@ -9,6 +9,12 @@
         wtf     = !$ZSHDOT/bin/git-wtf
         rank-contributors = !$ZSHDOT/bin/git-rank-contributors
         count   = !git shortlog -sn
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	cp = cherry-pick
 [color]
         diff = auto
         status = auto
