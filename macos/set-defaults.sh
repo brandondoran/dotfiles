@@ -68,7 +68,8 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+mkdir "${HOME}/Desktop/screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/screenshots"
 
 ###############################################################################
 # Finder                                                                      #
