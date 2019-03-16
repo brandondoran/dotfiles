@@ -6,12 +6,16 @@
 # - npm set init.author.email "your@email.com"
 # - npm set init.license "MIT"
 #
+# You should already have nvm installed and changed to the version of node you
+# want to use for the project.
+#
 node-project() {
   git init
   echo "# ${PWD##*/}" >> README.md
   npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
   npx gitignore node
   npx covgen "$(npm get init.author.email)"
+  nvm current > .nvmrc
   npm init -y
   git add -A
   git commit -m "Initial commit"
