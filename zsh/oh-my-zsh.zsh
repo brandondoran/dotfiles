@@ -1,6 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# powerlevel9k theme config
+export DEFAULT_USER=$USER
+export POWERLEVEL9K_MODE='nerdfont-complete'
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs newline status)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+export POWERLEVEL9K_STATUS_CROSS=true
+export POWERLEVEL9K_STATUS_OK=false
+export POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -11,14 +20,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="clean"
 ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# powerlevel9k theme config
-export DEFAULT_USER=$USER
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
-# export POWERLEVEL9K_DISABLE_RPROMPT=true
-export POWERLEVEL9K_STATUS_CROSS=true
-export POWERLEVEL9K_STATUS_OK=false
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

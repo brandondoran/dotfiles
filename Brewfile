@@ -1,8 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 tap 'caskroom/versions'
 
 brew 'ansible'
@@ -34,6 +33,7 @@ cask '1password'
 cask 'dropbox'
 cask 'firefox'
 cask 'font-fira-code'
+cash 'font-hack-nerd-font'
 cask 'google-chrome'
 cask 'graphql-playground'
 cash 'intellij-idea-ce'
