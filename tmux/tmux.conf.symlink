@@ -26,3 +26,7 @@ bind-key C-r source-file ~/.tmux.conf\; display "reloaded config"
 # Bind ctrl-k to tmux clear-history command
 # bind-key C-k send-keys C-l C-m\; run-shell "sleep 0.1"\; clear-history
 bind-key C-k send-keys "reset" C-m\; run-shell "sleep 0.1"\; clear-history
+
+set -g default-terminal "screen-256color"
+# tell Tmux that outside terminal supports true color
+set -ga terminal-overrides ",xterm-256color*:Tc"
