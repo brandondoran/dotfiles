@@ -88,7 +88,7 @@ else
 endif
 
 " Wrap commit messages and 72 chars
-autocmd Filetype gitcommit textwidth=72
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Go crazy!
 if filereadable(expand("~/.vimrc.local"))
