@@ -15,7 +15,7 @@ set-option -g set-titles on
 set-option -g set-titles-string '#H:#S.#I.#P #W #T'
 
 # Highlight the active window
-set-window-option -g window-status-current-bg magenta
+set-window-option -g window-status-current-style bg=magenta
 
 # Enable mouse support
 set -g mouse on
