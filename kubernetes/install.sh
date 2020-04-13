@@ -1,3 +1,4 @@
+#!/bin/sh
 # Install krew, a plugin manager for kubectl
 # https://krew.sigs.k8s.io/
 (
