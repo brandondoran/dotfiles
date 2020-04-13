@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
@@ -49,6 +51,7 @@ cask 'sourcetree'
 cask 'slack'
 cask 'tunnelbear'
 cask 'visual-studio-code'
+cask 'wireshark'
 cask 'zeplin'
 
 # install manually
